@@ -118,7 +118,8 @@ module.exports = function (grunt) {
                     src: [
                         '.tmp',
                         '<%= config.dist %>/*',
-                        '!<%= config.dist %>/.git*'
+                        '!<%= config.dist %>/.git*',
+                        '!<%= config.dist %>/.keep'
                     ]
                 }]
             },
@@ -194,7 +195,9 @@ module.exports = function (grunt) {
         // Automatically inject Bower components into the HTML file
         bowerInstall: {
             app: {
-                src: ['<%= config.app %>/index.html'],
+                src: ['<%= config.app %>/index.html',
+                      '<%= config.app %>/footer.html',
+                      '<%= config.app %>/header.html'],
                 exclude: ['bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js']
             },
             sass: {
@@ -224,7 +227,9 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= config.dist %>'
             },
-            html: '<%= config.app %>/index.html'
+            html: ['<%= config.app %>/index.html',
+                   '<%= config.app %>/footer.html',
+                   '<%= config.app %>/header.html']
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -232,7 +237,7 @@ module.exports = function (grunt) {
             options: {
                 assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
             },
-            html: ['<%= config.dist %>/{,*/}*.html'],
+            html: ['<%= config.layouts %>/{,*/}*.html'],
             css: ['<%= config.dist %>/styles/{,*/}*.css']
         },
 
@@ -328,6 +333,15 @@ module.exports = function (grunt) {
                     dest: '<%= config.layouts %>/',
                     src: [
                         'index.html'
+                    ]
+                }, {
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.layouts %>/chrome',
+                    src: [
+		    	'footer.html',
+			'header.html'
                     ]
                 },
                 {
