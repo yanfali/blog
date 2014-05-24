@@ -340,8 +340,8 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.layouts %>/chrome',
                     src: [
-		    	'footer.html',
-			'header.html'
+                        'footer.html',
+                        'header.html'
                     ]
                 },
                 {

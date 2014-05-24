@@ -4,6 +4,34 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
 
+.brandimage {
+    background-image: url(/images/1up-transparent-48x48.png);
+    height: 48px;
+    width: 48px;
+    margin: 8px;
+}
+
+.navbar {
+    background-color: #c6c1c1;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: #e6e1e1;
+}
+.navbar-brand.visible-xs {
+    padding: 22px 0;
+}
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+	margin-left: -8px;
+    }
+}
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -13,8 +41,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    background-color: #D6D1D1;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
