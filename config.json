@@ -1,19 +1,16 @@
 {
-  "contentdir": "hugo/content",
-  "layoutdir": "hugo/layouts",
-  "staticdir": "hugo/static",
-  "publishdir": "hugo/public",
-  "title": "Yan's Blog",
-  "params": {
-    "menu": [
-      {
-        "name": "hello world",
-        "weight": "-100"
-      },
-      {
-        "name": "goodbye world",
-        "weight": "-90"
-      }
-    ]
-  }
+    "contentdir": "hugo/content",
+    "layoutdir": "hugo/layouts",
+    "staticdir": "hugo/static",
+    "publishdir": "hugo/public",
+    "title": "Yan's Blog",
+    "params": {
+        "menu": [{
+            "name": "hello world",
+            "weight": "-100"
+        }, {
+            "name": "goodbye world",
+            "weight": "-90"
+        }]
+    }
 }
