@@ -1,0 +1,12 @@
+{{ template "chrome/header.html" }}
+
+<div class='row'>
+    <div class='well'>
+        <h2>{{ .Title }}</h2>
+	<h4>{{ .Date.Format "Mon Jan 02 2006" }}</h4>
+	<h5>About {{ .Description }}</h5>
+        {{ .Content }}
+    </div>
+</div>
+
+{{ template "chrome/footer.html" }}

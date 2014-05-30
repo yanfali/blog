@@ -1,9 +1,6 @@
-{
-  title: "Hello World",
-  date: "2014-05-21",
-  linktitle: "HelloWorld"
-}
-<p>
-What to Say? That is the question.
-</p>
+---
+  title: "Welcome"
+  date: "2014-05-21"
+  Description: "My very first post"
+---
 
