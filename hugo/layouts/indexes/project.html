@@ -3,18 +3,17 @@
 <div class="row">
     <h2 class="text-primary">{{ .Title }}</h3>
     <ul>
-        {{ range .Data.Pages.ByDate }}
-        <li>
+        {{ range .Data.Pages }}
+	<li>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
-            <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-        </li>
+                <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+            </li>
         {{ end }}
     </ul>
 </div>
 <script>
     window.hugo = {
-        section: "post"
+        section: 'project'
     };
 </script>
-
 {{ template "chrome/footer.html" }}

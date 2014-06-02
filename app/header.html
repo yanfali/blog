@@ -9,7 +9,6 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css /styles/vendor.css -->
         <!-- bower:css -->
-
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) /styles/main.css -->
@@ -42,16 +41,16 @@
                         <li class="hidden-xs">
                             <a class="navbar-brand" href="#">Excession</a>
                         </li>
-                        <li class="active">
+                        <li data-id="home" class="menu">
                             <a href="/">Home</a>
                         </li>
-                        <li>
+                        <li data-id="post" class="menu">
 			    <a href="/post/">Posts</a>
                         </li>
-                        <li>
-                            <a href="/projects/">Projects</a>
+                        <li data-id="project" class="menu">
+                            <a href="/project/">Projects</a>
                         </li>
-                        <li>
+			<li data-id="about" class="menu">
                             <a href="/about/me">About</a>
                         </li>
                     </ul>
