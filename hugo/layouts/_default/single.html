@@ -1,11 +1,20 @@
 {{ template "chrome/header.html" }}
 
 <div class='row'>
-    <div class='well'>
-        <h2>{{ .Title }}</h2>
-	<h4>{{ .Date.Format "Mon Jan 02 2006" }}</h4>
-	<h5>About {{ .Description }}</h5>
-        {{ .Content }}
+    <div class='well col-lg-12 col-md-12' style="position: relative;">
+        <h2 class="text-primary">{{ .Title }}</h2>
+	<div class="hugo-date-widget">
+	    <span class="month text-info">{{ .Date.Format "Jan" }}</span>
+	    <span class="rest text-info">{{ .Date.Day }} {{ .Date.Year }}</span>
+	</div>
+	{{ if .Description }}
+	<h4 style="margin-bottom: 15px;" class="text-muted">About {{ .Description }}</h5>
+	{{ else }}
+	<div style="margin-bottom: 40px;"></div>
+	{{ end }}
+	<div style="max-width: 37em; margin-left: .5em;">
+            {{ .Content }}
+        </div>
     </div>
 </div>
 
