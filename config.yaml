@@ -1,0 +1,10 @@
+---
+  baseurl: "https://li-hirata.org/"
+  contentdir: "hugo/content"
+  layoutdir: "hugo/layouts"
+  staticdir: "hugo/static"
+  publishdir: "hugo/public"
+  title: "Yan's Blog"
+  params:
+    Subtitle: "living, working, sleeping, playing"
+---

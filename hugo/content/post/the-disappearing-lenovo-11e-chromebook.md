@@ -7,7 +7,9 @@ Where is the yoga 11e Chromebook? It was announced at the beginning of
 the year and then promptly disappeared into the abyss. I finally found
 this [video](https://www.youtube.com/watch?v=6cr4f7QJKrc&feature=youtu.be).
 
+<div class="hidden-xs">
 <iframe width="560" height="315" src="//www.youtube.com/embed/6cr4f7QJKrc" frameborder="0" allowfullscreen></iframe>
+</div>
 
 So the interesting thing for me is that the presenter talks about a
 quad core celeron. A WAT? Yup turns out this is a thing. A Bay trail
