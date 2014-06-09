@@ -156,6 +156,13 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
     right: 15px;
 }
 
+.hugo-post-content {
+    max-width: 37em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+}
+
 @media (min-width: $screen-sm-min) {
   .col-sm-6-hugo-post {
       width: 48%;
