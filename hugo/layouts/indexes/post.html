@@ -2,12 +2,12 @@
 <div class="row">
     <h2 class="text-primary">{{ .Title }}</h3>
         <div>{{ range .Data.Pages.ByDate }}
-            <div style='min-height: 140px;' class="col-md-4 col-xs-12 col-sm-6">
-                <p class="text-muted">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-                <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-transform: capitalize;">
-		<a title="{{ .Title }}" href="{{ .Permalink }}">{{ .Title }}</a>
-                </p>
-		<p class="text-info" title="{{ .Description }}" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-transform: capitalize;">{{ .Description }}</p>
+            <div style='min-height: 140px;' class="hugo-post col-md-4-hugo-post col-xs-12 col-sm-6-hugo-post">
+                <h4 class="hugo-post-title hugo-ellipsis">
+		    <a title="{{ .Title }}" href="{{ .Permalink }}">{{ .Title }}</a>
+                </h4>
+		<p class="hugo-ellipsis hugo-description" title="{{ .Description }}">{{ .Description }}</p>
+                <p class="text-muted hugo-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
             </div>{{ end }}</div>
 </div>
 <script>

@@ -122,3 +122,52 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
         text-align: center;
     }
 }
+
+.hugo-post {
+    position: relative;
+    background-color: #ececec;
+    margin: .75%;
+    border: 1px solid #c8c8c8;
+    border-bottom-width: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.hugo-post-title {
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.hugo-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hugo-description {
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+
+.hugo-date {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .col-sm-6-hugo-post {
+      width: 48%;
+  }
+}
+@media (min-width: $screen-md-min) {
+  .col-md-4-hugo-post {
+    width: 31%;
+    margin-left: 1.3%;
+  }
+}
+@media (min-width: $screen-lg-min) {
+}
+
+
+
