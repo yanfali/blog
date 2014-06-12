@@ -2,5 +2,5 @@ default:
 	rm -fr hugo/public/*
 	grunt build
 	hugo
-	rsync -av hugo/public/* $(HUGO_DEST)
+	rsync -av --delete hugo/public/* $(HUGO_DEST)
 
